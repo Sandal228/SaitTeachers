@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='UTF-8'>
+		<title>Clothes shop</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="style1.css">
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+		<script src="wowmin.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+	</head>
+
+	<body>
+		<header>
+			<center>
+				<section class="glav_div">
+					<div>
+						<div>
+							<font size="8" color="white">Футболки с принтами</font>
+						</div>
+
+						<div class="price_div">
+							<font class="font_div">499</font> <sup class="font_div">руб.</sup>
+						</div>
+
+						<div class="text_div1">
+							<font>ПОЧЕМУ ТАК ДЕШЕВО?</font>				
+						</div> 
+
+						<div class="imagesHeader">
+							<div class="present_img" id="podarok" style="opacity: 0;">
+								<img src="images/present.png" width="150px" height="100px" 
+								class="wow animate__animated animate__heartBeat" onclick="show_modal2()">
+							</div>
+							
+
+							<div class="img_sale">						
+								<img src="images/sale.png" width="100px"> <br>
+								<font>Низкие цены</font>							
+							</div>
+
+							<div class="img_gruz">
+								<img src="images/gruzovik.png" width="100px" height="90px"> <br>
+								<font>Доставки по всей россии</font>
+							</div>
+
+							<div class="img_hit">
+								<img src="images/hit.png" width="100px" height="90px"> <br>
+								<font>Только хиты</font>
+							</div>
+							
+						</div>
+
+						
+					</div>
+				</section>
+			</center>
+		</header>
+
+		<main>
+			<section class="centered">
+				<div>
+					<div class="futbolki_text">
+						<font>Футболки</font><br>
+						<font size="5">100% хлопок</font>
+					</div>
+
+					<div class="img_div">
+
+						<div class="strelka" id="strelkaLeft">
+							<img src="images/left.PNG" width="100px" height="100px" onclick="rand_Tshirt()">
+						</div>
+						
+						<div class="fut_1">
+							<img src="images/photo.png" width="450px" height="500px" class="img_1" id="ts_1"> <br> 
+							<font size="6" class="font_1">Футболка</font> <br>
+							<font size="5" color="white" class="font_1" >499P</font> <br> 
+						</div>
+					
+
+						<div class="fut_1">
+							<img src="images/photo_1.png" width="450px" height="500px" class="img_2" id="ts_2"> <br>
+							<font size="6" class=font_1>Футболка</font> <br> 
+							<font size="5" color="white" class="font_1" >499P</font> <br>
+						</div>
+
+						<div class="strelka" id="strelkaRight">
+							<img src="images/right.PNG" width="100px" height="100px" onclick="rand_Tshirt()">
+						</div>
+					</div>
+				
+					
+				</div>
+			</section>
+
+			<section class="fut_sect">
+
+				<div class=title_fut>
+					<center>
+						Как выбрать размер?
+					</center>	
+				</div>
+
+				<div class=fut_3>
+
+					<div class="fut_1">
+						<img src="images/tshirt_1.jpg" id="th_1" width="250px" height="300px" class="photo_2"> <br>
+						<font size="6" class=font_2>Футболка</font> <br> 
+						<font size="5" color="white" >499P</font> <br> 
+						<button class="button_fut" id="but_1" onclick="summa(1)">ДОБАВИТЬ В ЗАКАЗ</button>
+					</div>
+
+					<div class="fut_1">
+						<img src="images/tshirt_2.jpg" id="th_2" width="250px" height="300px" class="photo_2"> <br>
+						<font size="6" class=font_2>Футболка</font> <br> 
+						<font size="5" color="white" >499P</font> <br> 
+						<button class="button_fut" id="but_2" onclick="summa(2)">ДОБАВИТЬ В ЗАКАЗ</button>
+						
+					</div>
+
+					<div class="fut_1">
+						<img src="images/tshirt_3.jpg" id="th_3" width="250px" height="300px" class="photo_2"> <br>
+						<font size="6" class=font_2>Футболка</font> <br> 
+						<font size="5" color="white" >499P</font> <br> 
+						<button class="button_fut" id="but_3" onclick="summa(3)">ДОБАВИТЬ В ЗАКАЗ</button>
+					</div> 
+				</div>
+
+				<div class='div_fut'>
+					<div class="fut_1">
+						<img src="images/tshirt_4.jpg" id="th_4" width="250px" height="300px" class="photo_2"> <br>
+						<font size="6" class=font_2>Футболка</font> <br> 
+						<font size="5" color="white" >499P</font> <br> 
+						<button class="button_fut" id="but_4" onclick="summa(4)">ДОБАВИТЬ В ЗАКАЗ</button>
+					</div>
+
+					<div class="fut_1">
+						<img src="images/tshirt_5.jpg" id="th_5" width="250px" height="300px" class="photo_2"> <br>
+						<font size="6" class=font_2>Футболка</font> <br> 
+						<font size="5" color="white" >499P</font> <br> 
+						<button class="button_fut" id="but_5" onclick="summa(5)">ДОБАВИТЬ В ЗАКАЗ</button>
+					</div>
+
+					<div class="fut_1">
+						<img src="images/tshirt_6.png" id="th_6" width="250px" height="300px" class="photo_2"> <br>
+						<font size="6" class=font_2>Футболка</font> <br> 
+						<font size="5" color="white" >499P</font> <br> 
+						<button class="button_fut" id="but_6" onclick="summa(6)">ДОБАВИТЬ В ЗАКАЗ</button>
+					</div>
+
+			
+				</div>
+
+
+			</section>
+
+			<section class='corz_sect'>
+				<div class='order_div'>
+					<font size='8'> ВАШ ЗАКАЗ </font>
+				</div>
+
+				<div class='corz_div'>
+					<font size='5'> Корзина пуста </font>
+				</div>
+
+				<div class='corz2_div' id="corzina">
+					<font> в корзине пусто! </font>
+				</div>
+			</section>
+			<section class="mod_sect">
+				<div class="modal_glav" id="mod1">
+					<div class="toper">
+						<img src="images/tshirt_1.jpg" width="75px" height="75px" id="ts1">
+						<img src="images/delete.png" width="30px" height="30px" class="musor" onclick="modal_wind(0)">
+					</div>
+					<div class="text_mod">
+						<p>499р</p>
+					</div>
+				</div>
+
+				<div class="modal_glav" id="mod2">
+					<div class="toper">
+						<img src="images/tshirt_2.jpg" width="75px" height="75px" id="ts2">
+						<img src="images/delete.png" width="30px" height="30px" class="musor" onclick="modal_wind(1)">
+					</div>
+					<div class="text_mod">
+						<p>499р</p>
+					</div>
+				</div>
+
+				<div class="modal_glav" id="mod3">
+					<div class="toper">
+						<img src="images/tshirt_3.jpg" width="75px" height="75px" id="ts3">
+						<img src="images/delete.png" width="30px" height="30px" class="musor" onclick="modal_wind(2)">
+					</div>
+					<div class="text_mod">
+						<p>499р</p>
+					</div>
+				</div>
+
+				<div class="modal_glav" id="mod4">
+					<div class="toper">
+						<img src="images/tshirt_4.jpg" width="75px" height="75px" if="ts4">
+						<img src="images/delete.png" width="30px" height="30px" class="musor" onclick="modal_wind(3)">
+					</div>
+					<div class="text_mod">
+						<p>499р</p>
+					</div>
+				</div>
+
+				<div class="modal_glav" id="mod5">
+					<div class="toper">
+						<img src="images/tshirt_5.jpg" width="75px" height="75px" id="ts5">
+						<img src="images/delete.png" width="30px" height="30px" class="musor" onclick="modal_wind(4)">
+					</div>
+					<div class="text_mod">
+						<p>499р</p>
+					</div>
+				</div>
+
+				<div class="modal_glav" id="mod6">
+					<div class="toper">
+						<img src="images/tshirt_6.png" width="75px" height="75px" id="ts6">
+						<img src="images/delete.png" width="30px" height="30px" class="musor" onclick="modal_wind(5)">
+					</div>
+					<div class="text_mod">
+						<p>499р</p>
+					</div>
+				</div>
+
+			</section>
+
+			<section class='form_sect'>
+				<form class="g-form" id="g-form-1" method="POST" action="" autocomplete="off">
+					<h2 class="g-form__title g-form__title_main">Оставьте заявку прямо сейчас и получите скидку 10%</h2>
+					<h2 class="g-form__title g-form__title_respond"></h2>
+					<div class="g-form__preloader"></div>
+					<div class="g-form__inputs">
+						<fieldset class="g-form__input-wrapper">
+							<input class="g-form__input g-form__input_name" id="name" name="Имя" placeholder="Введите ваше имя" required>
+						</fieldset>
+						
+						<fieldset class="g-form__input-wrapper">
+							<input class="g-form__input g-form__input_fam" id="fam" name="Фамилия" placeholder="Введите вашу фамилию" required>
+						</fieldset>
+			
+						<fieldset class="g-form__input-wrapper">
+							<input class="g-form__input g-form__input_tel" id="tel" name="Телефон" placeholder="Введите ваш телефон">
+						</fieldset>
+			
+						<fieldset class="g-form__input-wrapper">
+							<input id="email" name="Email" type="email" value=""
+							required placeholder="Введите ваш email"/>
+						</fieldset>
+			
+						<fieldset class="g-form__input-wrapper">
+							<input id="arbitrary-field" name="Произвольное поле" placeholder="Введите ваш адрес">
+						</fieldset>
+			
+			
+						<fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden">
+							<label for="honeypot">Помогает бороться со спамом. Должно быть пустым!</label>
+							<input id="honeypot" type="text" name="honeypot" value="">
+						</fieldset>
+			
+						<div class="g-form__button-wrapper">
+							<button class="g-form__button">Добавить в заказ</button>
+						</div>
+					</div>
+				</form>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+				<script src="g-form.js"></script>
+			
+				<!-- Для маски номера телефона -->
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+				<script>
+					$(function() {
+						$('.g-form__input_tel').mask('+7 (000) 000-00-00');
+					});
+				</script>
+			</section>
+
+			<section class='help_sect'>
+				<div class='tex_help'>
+					<img src='images/tp.png' width="100px" height="100px" class='img_help' onclick='print_contact()'>
+				</div>
+			</section>
+
+			<div id="modal_window">
+				<div class="modal" id="wind">
+
+					<div class="header">
+						<span class="close" onclick="show_modal()">&times;</span>
+						<h2>Заголовок</h2>
+					</div>
+
+					<div class="body">
+						<p>текст модального окна</p>
+						<p>Eще текст</p>
+					</div>
+
+					<div class="footer">
+						<h3>нижний текст</h3>
+					</div>
+
+				</div>
+			</div>
+
+			<section>
+				<div class="star">
+					<img src="images/star_2.png" width="75px" height="75px" id="st_1"  onmouseover="show_star(1)">
+					<img src="images/star_2.png" width="75px" height="75px" id="st_2"  onmouseover="show_star(2)">
+					<img src="images/star_2.png" width="75px" height="75px" id="st_3"  onmouseover="show_star(3)">
+					<img src="images/star_2.png" width="75px" height="75px" id="st_4"  onmouseover="show_star(4)">
+					<img src="images/star_2.png" width="75px" height="75px" id="st_5"  onmouseover="show_star(5)">
+				</div>
+
+				<div class="text">
+					<font size="4">Оставьте оценку сайту!</font>
+				</div>
+
+			</section>
+
+			<div class="modal" id="okno">
+
+				<div class="top">
+					<span class="close" onclick="show_modal2()">&times;</span>
+					<h2>Информация о подарке</h2>
+				</div>
+
+				<div class="midle">
+					вам подарок
+				</div>
+
+				<div class="down">
+					Телефон поддержки: 8 999 222 33 11
+				</div>
+
+			</div>
+
+			<section class='roz_sect'>
+
+				<div class='roz_div'>
+					<div class='roz_div2'>
+						<font size='7' color='white'>РОЗЫГРЫШ</font> <br>
+						<font size='6' color="white"> 10 000</font> <sup> <font size='4' color="white">руб.</font> </sup>  <br>
+						<font size='5' color="white"> СРЕДИ ОБЛАДАТЕЛЕЙ <br>КУПОНОВ </font> <br>
+						<font size='4' color="white" class='roz_font'>Вечером первого июля команда розыграет приз в прямом эфире на аккаунте @2hdhcdhck.ru</font>
+					</div>
+
+					<div class='money_photo'>
+						<img src='images/money.jpg' class="wow animate__animated animate__swing wow">
+					</div>
+				</div>
+			</section>
+			<p onclick="show_modal()" class="uslov">Условия доставки</p>
+
+			
+		</main>
+
+	</body>
+</html>
