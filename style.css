@@ -1,0 +1,519 @@
+body {
+    font-family: "Roboto Slab";
+}
+.glav_div {
+    background-color: #3d3939;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+.text_div1 {
+    background-color: red;
+    max-width: 250px;
+    font-size: 20px;
+    
+}
+
+.size_div{
+    font-size: 40px;
+    
+}
+
+.font_div{
+    size: 30px;
+    color: red;
+}
+
+.price_div {
+    font-size: 30px;
+}
+
+.present_img {
+    top: 10px;
+    position: absolute;
+}
+
+.img_sale {
+    margin-left: -400px;
+}
+
+.img_gruz{
+    margin-top: -110px;
+    margin-left: 20px;
+}
+
+.img_hit {
+    margin-left: 450px;
+    margin-top: -110px;
+}
+
+.imagesHeader {
+    margin-top: 30px;
+}
+
+main {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 280px;
+    
+}
+
+.futbolki_text {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.img_1 {
+    border: 1px solid black;
+    border-radius: 1px;
+}
+
+.strelka {
+    margin-top: 17%;
+}
+
+.fut_1 {
+    padding: 20px;
+}
+
+.img_div {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.font_1 {
+    margin-top: 550px;
+}
+
+.button_fut {
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: "Roboto Slab";
+    max-width: 200px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 15px;
+    color: white;
+    padding: 15px;
+    border: 1px white solid;
+}
+
+.title_fut {
+    background-color: rgba(74, 83, 98, 0.467);
+    font-size: 26px;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+
+
+.fut_3 {
+    display: flex;
+    justify-content: center;
+}
+
+.div_fut {
+    display: flex;
+    justify-content: center;
+    margin-right: 250px;
+}
+
+.fut_sect {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.first_fut {
+    margin-left: 50px;
+}
+
+.fut_blue {
+    display: block;
+}
+
+.photo_2 {
+    border: 1px black solid;
+    margin-top: 50px;
+}
+
+.button_fut {
+    margin-top: 20px;
+    background-color: #504f50;
+}
+
+.div_fut {
+    display: flex;
+    margin-left: 250px;
+}
+.roz_div{
+    display: flex;
+    margin-top: 50px;
+    box-shadow: 10px 7px 30px 5px black;
+    background-color: rgba(7, 7, 63, 0.133);
+    justify-content: space-between;
+}
+
+
+.money_photo, .roz_div {
+    padding: 10px;
+    font-family: "Roboto Slab";
+}
+
+.corz_sect {
+    margin-top: 50px;
+    font-weight: 600;
+}
+
+.corz_diswdv {
+    margin-top: 30px;
+    background-color: yellow;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+
+.corz_div, .corz2_div {
+    margin-top: 15px;
+    margin-left: 5px;
+    color: gray;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.form_sect {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+
+.input_1 {
+    padding: 15px;
+    background-color:#f1f1f1 ;
+    width: 300px;
+    box-shadow: 2px 1px 5px 0.5px black;
+    margin-bottom: 15px;
+    border: 0;
+}
+
+.line_1 {
+    box-shadow: 1px 1px 5px 0.5px gray;
+    max-width: 600px;
+    min-width: 330px;
+    margin-right:70px;
+    margin-bottom: 20px;
+}
+
+.button_2 {
+    font-weight: bolder;
+    color: white;
+    background-color: green;
+    margin-top: 30px;
+    margin-left: 90px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 0;
+    min-width: 150px;
+    min-height: 35px;
+    cursor: pointer;
+}
+
+
+
+
+.tex_help {
+    border: 1px solid black;
+    position: fixed;
+    z-index: 1;
+    right: 20px;
+    bottom: 20px;
+
+}
+
+.anima_1 {
+    animation-name: round;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    animation-name: animtop;
+    animation-duration: 0.5s;
+}
+
+.header {
+    margin-top: 10px;
+    padding: 3px 15px;
+    background-color: rgba(100, 100, 100);
+    color: white;
+}
+
+.body {
+    padding: 3px 15px;
+    background-color: rgba(60, 60, 60);
+    color: white;
+}
+
+.footer {
+    padding: 3px 15px;
+    background-color: rgba(100, 100, 100);
+    color: white;
+}
+
+#modal_window {
+    position: relative;
+    background-color: #f1f1f1;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 7px 0 rgba(0,0,0,0.3);
+    display: none;
+}
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color:red;
+    cursor: pointer;
+}
+
+.star {
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#okno {
+    display: none;
+}
+.top {
+    padding: 5px 15px;
+    color: white;
+    background-color: black;
+    font-size: large;
+}
+.midle {
+    padding: 6px 18px;
+    color: black;
+    background-color: white;
+    font-size: xx-large;
+}
+.down {
+    padding: 2px 8px;
+    color: darkslateblue;
+    background-color: hotpink;
+    font-size: medium;
+}
+
+.uslov {
+    margin-top: 100px;
+}
+
+.star {
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.show_modal3 {
+    max-height: 35px;
+    max-width: 150px;
+}
+
+.mod_text {
+    margin-left: 100px;
+}
+
+.modal_glav {
+    display: none;
+    background-color: azure;
+    max-width: 400px;
+    position: relative;
+    margin-top: 10px;
+}
+.text_mod {
+    position: absolute;
+    font-size: 18px;
+    bottom: 10px;
+    left: 200px;
+    
+}
+.musor {
+    position: absolute;
+    left: 330px;
+    bottom: 25px;
+}
+.toper {
+    background-color: azure;
+}
+
+
+
+
+
+@keyframes round {
+    0%{
+    margin-left: 0%;
+    color: red;
+    }
+
+    30%{
+        color: black;
+        margin-left: 45%;
+    }
+    50%{
+        color: green;
+        margin-left: 60%;
+
+    }
+
+    70% {
+        margin-left: 75%;
+        color: blueviolet;
+    }
+
+    100%{
+        margin-left: 85%;
+        color: blue;
+
+        
+    }
+}
+
+
+@keyframes animtop {
+    0% {
+        top: -300;
+        opacity: 0;
+    }
+
+    20% {
+        top: -240;
+        opacity: 0.2;
+    }
+
+    40% {
+        top: -180;
+        opacity: 0.4;
+    }
+
+    60% {
+        top: -120;
+        opacity: 0.6;
+    }
+
+    80% {
+        top: -60;
+        opacity: 0.8;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+
+@media screen and (min-width: 250px) and (max-width: 530px) {
+
+    .img_div {
+        display: block;
+    }
+
+    #strelkaRight{
+        position: absolute;
+        top: 40%;
+        left: 72%;
+    }
+
+    #strelkaLeft{
+        position: absolute;
+        top: 40%;
+        left: 17%;
+    }
+
+}
+
+@media  screen and (min-width: 535px) and (max-width: 795px) {
+    .img_div {
+        display: block;
+    }
+    #strelkaRight{
+        position: absolute;
+        top: 45%;
+        left: 72%;
+    }
+
+    #strelkaLeft{
+        top: 45%;
+        position: absolute;
+        left: 17%;
+    }
+}
+
+
+
+
+@media  screen and (min-width: 800px) and (max-width: 999px) { 
+    .img_div {
+        display: block;
+    }
+
+    #strelkaLeft {
+        top: 50%;
+        position: absolute;
+        left: 17%;
+    }
+
+    #strelkaRight {
+        top: 50%;
+        position: absolute;
+        right: 17%;
+    }
+
+}
+
+
+@media  screen and (min-width: 1000px) and (max-width: 1300px) { 
+    #strelkaLeft {
+        top: 135%;
+        position: absolute;
+        left: 17%;
+    }
+
+    #strelkaRight {
+        top: 135%;
+        position: absolute;
+        right: 17%;
+    }
+}
+
