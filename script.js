@@ -10,50 +10,9 @@ function print_present() {
     alert(present)
 }
 
-function calcul() {
-    var a = parseFloat(prompt('Введите число: '))
-    var b = parseFloat(prompt('Введите число: '))
-
-    alert('результат умножения: ' + (a * b) + '\n' + 'результат вычитания: ' + (a - b) + '\n' + 'результат сложения: ' + (a + b) + '\n' 
-    + 'результат деления: ' + (a / b))
-}
 
 
-function calc()  {
-    var text = prompt('введите текст: ');
-    var l = text.length;
-    var g = text[0];
-    var k = text[- 1];
-    var z = text[text.length];
-    alert(text + '\n' + l + '\n' + g + '\n' + k + '\n' + z);
-    
 
-}
-
-function indexof_1()  {
-    var text = prompt('введите текст: ');
-    var ind = text[3];
-    alert(text.indexOf('текст'));
-    var g = text.replace('привет','пока');
-    alert(g + '\n' + ind);
-
-}
-
-function button_test()  {
-    var but = document.getElementById('button_1');
-    but.style.borderRadius = "10px";
-    but.style.padding = "20px";
-    but.style.border = "0px";
-    but.style.backgroundColor = "blue"
-}
-
-function test_1()  {
-    var but_1 = document.getElementById('button_1');
-    but_1.style.borderRadius = "5px";
-    but_1.style.padding = "10px";
-    but_1.style.border = "1px";
-    but_1.style.backgroundColor = "green"
-}
 
 function change_style()  {
     b = document.getElementById("button_1");
@@ -84,30 +43,11 @@ function change_style()  {
         b.style.padding = "5px";
 }
 
-function sravn() {
-    var a = "10";
-    var b = "20";
 
-    if (a < b && b == 20 );
-    {
-        alert("условие верно")
-    }
 
-    if (a == b || a != 15) {
-        alert("Условие верно")
-    }
 
-}
 
-function test_us()  {
-    var i = 0
 
-    for (let i = 0; i < 3; i++)
-    {
-        alert(i)
-    }
-    
-}
 
 function massive() {
     var mas = ["o1", "o2", "o3"];
@@ -156,13 +96,13 @@ function show_star(one) {
     b = ids[one]
     a = document.getElementById(b);
 
-    if (a.src.indexOf("star_2.png") >-1)
+    if (a.src.indexOf("images/star_2.png") >-1)
     {
         for (let i=0; i <= one; i++)
         {
             b = ids[i]
             a = document.getElementById(b);
-            a.src="star_1.png";
+            a.src="images/star_1.png";
         }
     }
     else
@@ -173,7 +113,7 @@ function show_star(one) {
             {
                 b = ids[i];
                 a = document.getElementById(b);
-                a.src="star_2.png";
+                a.src="images/star_2.png";
             }
         }
     }
@@ -210,7 +150,7 @@ function show_modal2() {
 function form() {
     var name = document.getElementById("name").value;
     var fam = document.getElementById("fam").value;
-    var mail = document.getElementById("mail").value;
+    var mail = document.getElementById("email").value;
     var tel = document.getElementById("tel").value;
     if (name == '' || name == " ")
     {
@@ -256,7 +196,7 @@ function random(arr) {
 }
 
 function rand_Tshirt() {
-    var arr = ["photo2.png", "star_1.png"];
+    var arr = ["images/tshirt_1.jpg", "images/tshirt_2.jpg", "images/tshirt_3.jpg", "images/tshirt_4.jpg"];
     var id_img = ["ts_1", "ts_2"];
 
     for (let i = 0; i < id_img.length; i++) {
@@ -265,3 +205,64 @@ function rand_Tshirt() {
         c.src = img;
     }
 }
+var result = 0
+function summa(arg) {
+    var corzinaSum = document.getElementById("corzina");
+    var sum = ["but_1", "but_2", "but_3", "but_4", "but_5", "but_6"];
+    met = ["mod1", "mod2", "mod3", "mod4", "mod5", "mod6"];
+    arg -= 1
+    var doc = document.getElementById(met[arg]);
+    
+    var res = ""
+    c = document.getElementById(sum[arg]);
+    if (window.getComputedStyle(c).backgroundColor == "rgb(80, 79, 80)" && window.getComputedStyle(doc).display == "none")
+    {
+        result += 499
+        c.style.backgroundColor = "gray"  
+        doc.style.display = "block";
+        
+        c.innerHTML = "УБРАТЬ ИЗ ЗАКАЗА"
+    }
+    else 
+    {
+        result -= 499
+        c.style.backgroundColor = "rgb(80, 79, 80)" 
+        res = "Сумма заказа: " + result
+        corzinaSum.innerHTML = res
+        doc.style.display = "none";
+        alert(res)
+        c.innerHTML = "ДОБАВИТЬ В ЗАКАЗ"
+    }
+    
+
+    res = "Сумма заказа: " + result
+    corzinaSum.innerHTML = res
+}
+
+
+function modal_wind(dec) {
+    met = ["mod1", "mod2", "mod3", "mod4", "mod5", "mod6"]
+    mas = ["but_1", "but_2", "but_3", "but_4", "but_5", "but_6", ]
+    var sum = " "
+    var text = document.getElementById("corzina")
+    var doc = document.getElementById(met[dec]);
+    var knp = document.getElementById(mas[dec])
+    if (window.getComputedStyle(doc).display == "none")
+    {
+        doc.style.display = "block";
+    }
+    else {
+        result -= 499
+        corzina.innerHTML = "Сумма заказа: " + result;
+        doc.style.display = "none";
+        knp.innerHTML = "ДОБАВИТЬ В ЗАКАЗ";
+        knp.style.backgroundColor = "rgb(80, 79, 80)";
+
+
+
+    }
+    
+}
+
+
+
