@@ -2,14 +2,15 @@
 <html>
 	<head>
 		<meta charset='UTF-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Clothes shop</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="style1.css">
-		<script src="script.js"></script>
+		<script src="script2.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet
 		<script src="wowmin.js"></script>
 		<script>
 			new WOW().init();
@@ -20,7 +21,7 @@
 		<header>
 			<center>
 				<section class="glav_div">
-					<div>
+					<div class="div_style">
 						<div>
 							<font size="8" color="white">Футболки с принтами</font>
 						</div>
@@ -80,14 +81,14 @@
 						<div class="fut_1">
 							<img src="images/photo.png" width="450px" height="500px" class="img_1" id="ts_1"> <br> 
 							<font size="6" class="font_1">Футболка</font> <br>
-							<font size="5" color="white" class="font_1" >499P</font> <br> 
+							<font size="5" color="white" class="font_1" id="pc1">499Р</font> <br> 
 						</div>
 					
 
 						<div class="fut_1">
 							<img src="images/photo_1.png" width="450px" height="500px" class="img_2" id="ts_2"> <br>
 							<font size="6" class=font_1>Футболка</font> <br> 
-							<font size="5" color="white" class="font_1" >499P</font> <br>
+							<font size="5" color="white" class="font_1" id="pc2">499P</font> <br>
 						</div>
 
 						<div class="strelka" id="strelkaRight">
@@ -112,14 +113,14 @@
 					<div class="fut_1">
 						<img src="images/tshirt_1.jpg" id="th_1" width="250px" height="300px" class="photo_2"> <br>
 						<font size="6" class=font_2>Футболка</font> <br> 
-						<font size="5" color="white" >499P</font> <br> 
+						<font size="5" color="white" id="pc3">499P</font> <br> 
 						<button class="button_fut" id="but_1" onclick="summa(1)">ДОБАВИТЬ В ЗАКАЗ</button>
 					</div>
 
 					<div class="fut_1">
 						<img src="images/tshirt_2.jpg" id="th_2" width="250px" height="300px" class="photo_2"> <br>
 						<font size="6" class=font_2>Футболка</font> <br> 
-						<font size="5" color="white" >499P</font> <br> 
+						<font size="5" color="white" id="pc4">499P</font> <br> 
 						<button class="button_fut" id="but_2" onclick="summa(2)">ДОБАВИТЬ В ЗАКАЗ</button>
 						
 					</div>
@@ -127,30 +128,30 @@
 					<div class="fut_1">
 						<img src="images/tshirt_3.jpg" id="th_3" width="250px" height="300px" class="photo_2"> <br>
 						<font size="6" class=font_2>Футболка</font> <br> 
-						<font size="5" color="white" >499P</font> <br> 
+						<font size="5" color="white" id="pc5">499P</font> <br> 
 						<button class="button_fut" id="but_3" onclick="summa(3)">ДОБАВИТЬ В ЗАКАЗ</button>
 					</div> 
 				</div>
 
-				<div class='div_fut'>
+				<div class='fut_3'>
 					<div class="fut_1">
 						<img src="images/tshirt_4.jpg" id="th_4" width="250px" height="300px" class="photo_2"> <br>
 						<font size="6" class=font_2>Футболка</font> <br> 
-						<font size="5" color="white" >499P</font> <br> 
+						<font size="5" color="white" id="pc6">499P</font> <br> 
 						<button class="button_fut" id="but_4" onclick="summa(4)">ДОБАВИТЬ В ЗАКАЗ</button>
 					</div>
 
 					<div class="fut_1">
 						<img src="images/tshirt_5.jpg" id="th_5" width="250px" height="300px" class="photo_2"> <br>
 						<font size="6" class=font_2>Футболка</font> <br> 
-						<font size="5" color="white" >499P</font> <br> 
+						<font size="5" color="white" id="pc7">499P</font> <br> 
 						<button class="button_fut" id="but_5" onclick="summa(5)">ДОБАВИТЬ В ЗАКАЗ</button>
 					</div>
 
 					<div class="fut_1">
 						<img src="images/tshirt_6.png" id="th_6" width="250px" height="300px" class="photo_2"> <br>
 						<font size="6" class=font_2>Футболка</font> <br> 
-						<font size="5" color="white" >499P</font> <br> 
+						<font size="5" color="white" id="pc8">499P</font> <br> 
 						<button class="button_fut" id="but_6" onclick="summa(6)">ДОБАВИТЬ В ЗАКАЗ</button>
 					</div>
 
@@ -174,13 +175,14 @@
 				</div>
 			</section>
 			<section class="mod_sect">
+
 				<div class="modal_glav" id="mod1">
 					<div class="toper">
 						<img src="images/tshirt_1.jpg" width="75px" height="75px" id="ts1">
 						<img src="images/delete.png" width="30px" height="30px" class="musor" onclick="modal_wind(0)">
 					</div>
 					<div class="text_mod">
-						<p>499р</p>
+						<p id="pc9">499Р</p>
 					</div>
 				</div>
 
@@ -190,7 +192,7 @@
 						<img src="images/delete.png" width="30px" height="30px" class="musor" onclick="modal_wind(1)">
 					</div>
 					<div class="text_mod">
-						<p>499р</p>
+						<p id="pc10">499Р</p>
 					</div>
 				</div>
 
@@ -200,7 +202,7 @@
 						<img src="images/delete.png" width="30px" height="30px" class="musor" onclick="modal_wind(2)">
 					</div>
 					<div class="text_mod">
-						<p>499р</p>
+						<p id="pc11">499Р</p>
 					</div>
 				</div>
 
@@ -210,7 +212,7 @@
 						<img src="images/delete.png" width="30px" height="30px" class="musor" onclick="modal_wind(3)">
 					</div>
 					<div class="text_mod">
-						<p>499р</p>
+						<p id="pc12">499Р</p>
 					</div>
 				</div>
 
@@ -220,7 +222,7 @@
 						<img src="images/delete.png" width="30px" height="30px" class="musor" onclick="modal_wind(4)">
 					</div>
 					<div class="text_mod">
-						<p>499р</p>
+						<p id="pc13">499Р</p>
 					</div>
 				</div>
 
@@ -230,7 +232,7 @@
 						<img src="images/delete.png" width="30px" height="30px" class="musor" onclick="modal_wind(5)">
 					</div>
 					<div class="text_mod">
-						<p>499р</p>
+						<p id="pc14">499Р</p>
 					</div>
 				</div>
 
@@ -294,21 +296,21 @@
 
 			<div id="modal_window">
 				<div class="modal" id="wind">
+					<div class="modalw1">
+						<div class="header">
+							<span class="close" onclick="show_modal()">&times;</span>
+							<h2>Заголовок</h2>
+						</div>
 
-					<div class="header">
-						<span class="close" onclick="show_modal()">&times;</span>
-						<h2>Заголовок</h2>
+						<div class="body">
+							<p>текст модального окна</p>
+							<p>Eще текст</p>
+						</div>
+
+						<div class="footer">
+							<h3>нижний текст</h3>
+						</div>
 					</div>
-
-					<div class="body">
-						<p>текст модального окна</p>
-						<p>Eще текст</p>
-					</div>
-
-					<div class="footer">
-						<h3>нижний текст</h3>
-					</div>
-
 				</div>
 			</div>
 
@@ -346,17 +348,21 @@
 
 			<section class='roz_sect'>
 
-				<div class='roz_div'>
-					<div class='roz_div2'>
-						<font size='7' color='white'>РОЗЫГРЫШ</font> <br>
-						<font size='6' color="white"> 10 000</font> <sup> <font size='4' color="white">руб.</font> </sup>  <br>
-						<font size='5' color="white"> СРЕДИ ОБЛАДАТЕЛЕЙ <br>КУПОНОВ </font> <br>
-						<font size='4' color="white" class='roz_font'>Вечером первого июля команда розыграет приз в прямом эфире на аккаунте @2hdhcdhck.ru</font>
+				<font size="5" class="tit">Барабан бонусов</font>
+				<div class="strel">
+					<img src="images/pngw.png" width="50px" height="75px">
+				</div>
+				<div class="bonus" id="bar" onclick="rotate_rotation()">
+					<img src="images/Барабан.png" width="500px" height="500px">
+				</div>
+				<div class="vin" id="res1">
+					<div class="modal1" id="mod1" onclick="rotate_rotation()">
+						<span id="res">
+							<font>Вы ничего не выиграли</font>
+						</span>
 					</div>
+				</div>
 
-					<div class='money_photo'>
-						<img src='images/money.jpg' class="wow animate__animated animate__swing wow" width="350px" height="=250px">
-					</div>
 				</div>
 			</section>
 			<p onclick="show_modal()" class="uslov">Условия доставки</p>
