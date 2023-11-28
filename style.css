@@ -553,17 +553,138 @@ main {
 
 @media screen and (min-width: 250px) and (max-width: 530px) {
 
-   .fut_1 {
-    max-width: 300px;
-    max-height: 400px;
+   .glav_div{
+    height: 125px;
    }
-    .img_hit {
-        margin-left: -100px;
-        height: 85px;
-    }
-    .div_fut, .fut_3, .fut_sect {
-        display: block;
-    }
+
+   .font_title{
+    font-size: 20px;
+    margin-right: 150px;
+   }
+   .price_div{
+    font-size: 15px;
+    margin-right: 140px;
+   }
+   .text_div1{
+    font-size: 15px;
+    margin-right: 140px;
+   }
+   .img_gruz{
+    height: 30px;
+   }
+   .font_gruz{
+    margin-right: 50px;
+   }
+   .sale {
+    width: 40px;
+    height: 30px;
+   }
+   .gruz {
+    width: 40px;
+    margin-top: 50px;
+    margin-right: 150px;
+   }
+   .font_hit{
+    margin-right: 45px;
+   }
+   .hit{
+    width: 40px;
+    height: 30px;
+    margin-top: 140px;
+    margin-right: 50px;
+   }
+   .futbolki_text{
+    font-size: 25px;
+    margin-right: 150px;
+   }
+   .img_div{
+    margin-right: 100px;
+   }
+   .strelka{
+    display: none;
+   }
+   .fut_1{
+    padding: 0px;
+    margin-bottom: 7px;
+   }
+   .img_1{
+    width: 125px;
+    height: 300px;
+   }
+   .img_2{
+    width: 125px;
+    height: 300px;
+   }
+   .font_1{
+    font-size: 15px;
+   }
+   .title_fut{
+    font-size: 15px;
+    margin-left: -50px;
+    margin-right: 75px;
+   }
+   .fut_1{
+    width: 150px;
+    height: 300px;
+    margin-right: 275px;
+   }
+   .order_div{
+    margin-top: 150px
+   }
+   .font_corz{
+    font-size: 22px;
+   }
+   .corz_div{
+    font-size: 15px;
+   }
+   .corz2_div{
+    font-size: 13px;
+   }
+   .form_sect{
+    width: 350px;
+   }
+   .help_sect{
+    margin-right: 500px;
+   }
+   .img_help{
+    width: 50px;
+    height: 50px;
+   }
+   #st_1{
+    width: 50px;
+    height: 50px;
+   }
+   #st_2{
+    width: 50px;
+    height: 50px;
+   }
+   #st_3{
+    width: 50px;
+    height: 50px;
+   }
+   #st_4{
+    width: 50px;
+    height: 50px;
+   }
+   #st_5{
+    width: 50px;
+    height: 50px;
+   }
+   .tit{
+    font-size: 20px;
+    margin-right: 150px;
+   }
+   .strel_img{
+    height: 50px;
+    width: 25px;
+    margin-top: 50px;
+    margin-right: 115px;
+   }
+   .bonus_img{
+    width: 200px;
+    height: 200px;
+    margin-right: 150px;
+   }
 }
 
 @media  screen and (min-width: 535px) and (max-width: 795px) {
