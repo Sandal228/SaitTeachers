@@ -3,8 +3,19 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
+.imgsDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.hundredPercent {
+    width: 100vw;
+}
 
 body {
     font-family: "Roboto Slab";
@@ -25,6 +36,7 @@ body {
     background-color: lightslategray;
     max-width: 250px;
     font-size: 20px;
+    margin-top: 20px;
     
 }
 
@@ -49,18 +61,15 @@ body {
 }
 
 .img_sale {
-    margin-left: -400px;
+    
 }
 
 .img_gruz{
-    margin-top: -110px;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
-.img_hit {
-    margin-left: 450px;
-    margin-top: -110px;
-}
+
 
 .imagesHeader {
     margin-top: 30px;
@@ -99,7 +108,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
 }
 
 .font_1 {
@@ -206,7 +214,7 @@ main {
 .form_sect {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
 
 }
 
@@ -317,7 +325,6 @@ main {
 .star {
     display: flex;
     justify-content: center;
-    margin-left: 50px;
 }
 
 .text {
@@ -352,10 +359,6 @@ main {
     text-align: center;
 }
 
-.star {
-    margin-top: 50px;
-    margin-right: 50px;
-}
 
 .show_modal3 {
     max-height: 35px;
@@ -413,8 +416,6 @@ main {
   }
   
   .rotateIn1 {
-      left: 550px;
-      position: absolute;
       animation-name: rotateIn1;
       transform-origin: center;
       animation-duration: 10s;
@@ -423,6 +424,7 @@ main {
       animation-delay: 0;
       transition: ease-in-out;
   }
+
   .bonus {
     animation-duration: var(--duraction);
     animation-iteration-count: 1;
@@ -553,104 +555,88 @@ main {
 
 @media screen and (min-width: 250px) and (max-width: 530px) {
 
-   .glav_div{
-    height: 125px;
-   }
+    .centered {
+        margin-top: 200px;
+    }
+
+    .fut_3 {
+        display: block;
+        text-align: center;
+    }
+
+    .fut_sect {
+        display: inline-block;
+    }
 
    .font_title{
     font-size: 20px;
-    margin-right: 150px;
    }
+
    .price_div{
     font-size: 15px;
-    margin-right: 140px;
    }
+
    .text_div1{
     font-size: 15px;
-    margin-right: 140px;
    }
-   .img_gruz{
-    height: 30px;
-   }
-   .font_gruz{
-    margin-right: 50px;
-   }
-   .sale {
-    width: 40px;
-    height: 30px;
-   }
-   .gruz {
-    width: 40px;
-    margin-top: 50px;
-    margin-right: 150px;
-   }
-   .font_hit{
-    margin-right: 45px;
-   }
-   .hit{
-    width: 40px;
-    height: 30px;
-    margin-top: 140px;
-    margin-right: 50px;
-   }
+
    .futbolki_text{
     font-size: 25px;
-    margin-right: 150px;
    }
-   .img_div{
-    margin-right: 100px;
+
+   .img_1 {
+    margin-left: -50px;
+    height: 230px;
+    width: 150px;
    }
+
    .strelka{
     display: none;
    }
+
    .fut_1{
     padding: 0px;
     margin-bottom: 7px;
+   
    }
+   .price {
+    margin-left: 50px;
+   }
+   .button_fut {
+    width: 150px;
+   }
+
    .img_1{
     width: 125px;
     height: 300px;
    }
+
    .img_2{
     width: 125px;
     height: 300px;
    }
+   
    .font_1{
     font-size: 15px;
+    margin-right: 65px;
    }
+
    .title_fut{
     font-size: 15px;
-    margin-left: -50px;
-    margin-right: 75px;
    }
+
+
    .fut_1{
     width: 150px;
     height: 300px;
-    margin-right: 275px;
+    margin-bottom: 250px;
    }
-   .order_div{
-    margin-top: 150px
+   
+   .fut_font {
+    margin-left: 50px;
    }
-   .font_corz{
-    font-size: 22px;
-   }
-   .corz_div{
-    font-size: 15px;
-   }
-   .corz2_div{
-    font-size: 13px;
-   }
-   .form_sect{
-    width: 350px;
-   }
-   .help_sect{
-    margin-right: 500px;
-   }
-   .img_help{
-    width: 50px;
-    height: 50px;
-   }
-   #st_1{
+
+   #st_1 {
     width: 50px;
     height: 50px;
    }
@@ -670,22 +656,13 @@ main {
     width: 50px;
     height: 50px;
    }
-   .tit{
-    font-size: 20px;
-    margin-right: 150px;
+   .bonus_img {
+    width: 230px; 
+    height: 230px;
    }
-   .strel_img{
-    height: 50px;
-    width: 25px;
-    margin-top: 50px;
-    margin-right: 115px;
-   }
-   .bonus_img{
-    width: 200px;
-    height: 200px;
-    margin-right: 150px;
-   }
+ 
 }
+
 
 @media  screen and (min-width: 535px) and (max-width: 795px) {
    
@@ -703,68 +680,57 @@ main {
 
 
 @media  screen and (min-width: 800px) and (max-width: 999px) { 
-  
+    
+    .title_fut {
+        margin-top: 200px;
+    }
 
-   .div_style {
-    padding-right: 220px;
-
-   }
    .present_img {
     display: none;
    }
-   .img_hit {
-    margin-left: -180px;
-   }
-   .glav_div {
-    width: 550px;
-    height: 450px
-   }
+
    .strelka {
     height: 70px;
     width: 50px;
    }
-   .centered {
-    margin-top: 600px;
-    margin-right: 150px;
+   #strelkaLeft {
+    margin-right: 50px;
    }
+
    .tex_help {
     width: 75px;
     height: 75px
    }
+
    .img_help {
     width: 75px;
     height: 70px
    }
-   .fut_1 {
-    height: 250px;
-    width: 200px;
-   }
-   .corz_sect {
-    margin-left: 15px
-   }
+
    .order_div {
     font-size: 30px;
+    margin-top: 250px;
    }
+
    .corz_div {
     font-size: 18px;
    }
+
    .corz2_div {
     font-size: 15px;
    }
+
    .g-form {
     width: 400px;
     height: 500px
    }
-   .star {
-    margin-top: 300px
-   }
-    .corz_sect {
-        margin-left: 250px;
-    }
+
+
     .img_1 {
         width: 300px;
         height: 350px;
     }
+
     .img_2 {
         width: 300px;
         height: 350px;

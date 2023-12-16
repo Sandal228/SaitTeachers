@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-html, body {
-	margin: 0;
-	padding: 0;
-	font: 16px 'Roboto', sans-serif;
-	color: #d2d2d3;
-	display: flex;
-	justify-content: center;
-	padding: 30px 15px;
-	background: #212429; 
-}
+
 
 * {
 	box-sizing: border-box;
